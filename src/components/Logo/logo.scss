@@ -1,0 +1,59 @@
+.logoContainer {
+    --logo-size: 75px;
+    
+    border-radius: 200px;
+    border-width: 2px;
+    border-style: solid;
+
+    width: var(--logo-size);
+    height: var(--logo-size);
+
+    position: relative;
+    overflow: hidden; /* Déplacer overflow ici */
+
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+
+    /* Use CSS variables for colors */
+    background-color: var(--rose-color);
+    border-color: var(--border-color);
+
+    transition: background-color 0.2s ease-out;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: var(--rose-color);
+    }
+}
+
+.secondCircle {
+    border-radius: 200px;
+
+    content: "";
+    position: absolute;
+
+    left: 30%;
+    top: 30%;
+
+    width: var(--logo-size);
+    height: var(--logo-size);
+
+    z-index: 0;
+
+    /* Use CSS variable for secondary color */
+    background-color: var(--darker-green-color);
+}
+
+.logoPenguin {
+    margin-left: calc(var(--logo-size) * 0.4);
+    margin-top: calc(var(--logo-size) * 0.2);
+
+    width: calc(var(--logo-size) * 0.36);
+
+    aspect-ratio: calc(28 / 43);
+
+    position: relative; /* Ajout de position: relative */
+    z-index: 1;
+}

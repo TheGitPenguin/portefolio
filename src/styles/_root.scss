@@ -1,0 +1,19 @@
+:root {
+    --background-color: #F0F0DB;
+    --first-layer: #ACBAC4;
+    --font-color: #30364F;
+    --border-color: #30364F; 
+
+    --rose-color: #FFD8DF;
+    --darker-rose-color: #FFAAB8;
+    --green-color: #F0FFDF;
+    --darker-green-color: #A8DF8E;
+
+}
+
+:root[data-theme="dark"] {
+    --background-color: #30364F;
+    --first-layer: #ACBAC4;
+    --font-color: #F0F0DB;
+    --border-color: #F0F0DB; 
+}
